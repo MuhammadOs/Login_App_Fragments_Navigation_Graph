@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".NewActivity">
+
+        <TextView
+            android:id="@+id/textview_Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30sp"
+            android:text="Welcome Back!"
+            android:textColor="@color/black"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center"
+            android:text="Please sing in to continue"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/email_editText"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="5dp"
+            android:drawableTint = "@color/purple_700"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/password_editText"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:paddingRight="15dp"
+            android:text="Forget Password?" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Or connect using"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".NewActivity"
+            >
+            <Button
+                android:layout_width="140dp"
+                android:backgroundTint="@color/blue"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="Facebook"
+                android:drawableLeft="@drawable/facebook"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/red"
+                android:layout_margin="10dp"
+                android:text="Google"
+                android:drawableLeft="@drawable/google"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Don't have an account ? "
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/SignUp_Btn"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:textColor="@color/purple_700"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

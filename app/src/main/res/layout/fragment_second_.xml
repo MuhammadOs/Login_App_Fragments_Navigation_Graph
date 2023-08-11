@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="15dp"
+            android:paddingTop="15dp"
+            android:background="@color/white"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationview_login"
+            app:lottie_colorFilter="@color/purple_700"
+            android:layout_width="106dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_lko8lpdg" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get Started!"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/username_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Username"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        <EditText
+            android:id="@+id/email_editText_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        <EditText
+            android:id="@+id/phone_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        <EditText
+            android:id="@+id/password_editText_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        <EditText
+            android:id="@+id/passwordConfirm_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/create_btn"
+            android:backgroundTint="@color/purple_700"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Already have an account ? "
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/Login_Btn"
+                android:backgroundTint="@color/white"
+                android:text="Login here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/purple_700"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
